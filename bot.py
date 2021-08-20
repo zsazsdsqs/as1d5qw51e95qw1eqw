@@ -32,14 +32,14 @@ class FenerbahceBot():
 
         message = MIMEMultipart("alternative")
         message["Subject"] = "Yeni bir haber paylaşıldı!"
-        message["From"] = "tekyolfenercom@gmail.com"
+        message["From"] = "sashabelov1907@gmail.com"
         message["To"] = "tekyolfenercom@gmail.com"
 
         part1 = MIMEText(f"Yeni haber linki: {url}", "plain")
         message.attach(part1)
 
         client.sendmail(
-            "tekyolfenercom@gmail.com", "tekyolfenercom@gmail.com", message.as_string(
+            "sashabelov1907@gmail.com", "tekyolfenercom@gmail.com", message.as_string(
 
             )
         )
